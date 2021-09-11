@@ -76,7 +76,7 @@ a {
     width: 100%;
     z-index:  1000;
     display: flex;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     justify-content: space-between;
     align-items: center;
     background: var(--lightBlue);
@@ -104,18 +104,21 @@ a {
     position: relative;
 }
 .nav-link-product:hover .sub-product-nav {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 .sub-product-nav {
-    display: none;
+    opacity: 0;
     width: 300px;
     text-align:left;
     background: var(--lightBlue);
     list-style: none;
     position: absolute;
     left: -2rem;
-    top: 5rem;
+    top: 4.5rem;
     z-index: 1000;
+    visibility: hidden;
+    transition: var(--mainTransition);
 }
 .sub-product-nav li {
     display: block;
@@ -175,11 +178,11 @@ a {
 .products{
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-between;
 }
 .product-item{
     padding-top: 1.5rem;
     position: relative;
-    margin-left: 2rem;
     display: flex;
     flex-direction: column;
 }
@@ -287,3 +290,201 @@ a {
     font-size: 3rem;
 }
 /* End of Sale Banner */
+/* Services */
+.services{
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item{
+    flex: 0 0 calc(25% - 2rem);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-image {
+    display: block;
+    width: 20%;
+}
+.service-title{
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.service-description{
+    color: var(--lightGray);
+    margin-top: auto;
+}
+
+/* End of Services */
+/* Follow */
+.follows{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.follow-item{
+    flex: 0 0 calc(25% - 2rem);
+}
+
+.follow-item a {
+    position: relative;
+    display: block;
+    height: calc(50% + 2rem);
+}
+
+.follow-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.follow-item a:before {
+    content: '';
+    width: 100%;
+    height: calc(100% - 1rem);
+    top: 1rem ;
+    left: 0;
+    position: absolute;
+    background-color: rgba(58, 58, 55, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--mainTransition);
+}
+
+.follow-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--mainWhite);
+    opacity: 0;
+    transition: var(--mainTransition);
+}
+
+.follow-item a:hover:before {
+    top:0;
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+}
+.follow-item a:hover .follow-icon {
+    opacity: 1;
+}
+/* End of Follow */
+/* Footer */
+#footer {
+    margin-top: -5rem;
+    background: var(--lightBlue);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item {
+    flex: 0 0 calc(33.3333% - 2rem);
+}
+
+.footer-item h1 {
+    font-size: 1rem;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-info{
+    align-self: center;
+}
+.footer-info .logo{
+    padding-bottom: 1.5rem;
+}
+.footer-info .info{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--lightGray);
+}
+.footer-link{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link .link {
+    display: flex;
+}
+
+.footer-link .link .link-item {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-top: 1rem;
+    margin-right: 2rem;
+}
+.footer-link .link .link-item  a {
+    color: var(--lightGray);
+    font-size: 14px;
+    line-height: 2rem;
+}
+
+.footer-mail{
+    display: flex;
+    flex-direction: column;
+}
+.footer-mail h2 {
+    padding-bottom: 1rem;
+}
+.footer-mail h4 {
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.footer-mail .input{
+    width: 100%;
+    display: flex;
+}
+.footer-mail .input input {
+    flex: 0 0 70%;
+    outline: none;
+    border: 1px solid var(--darkBlue);
+    padding-left: 1rem;
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+.footer-mail .input button {
+    flex: 0 0 30%;
+    outline: none;
+    border: none;
+    background-color: var(--darkBlue);
+    color: var(--mainWhite);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.footer-mail .social{
+    padding-top: 1rem;
+}
+.footer-mail .social a {
+    color: var(--mainBlack);
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    transition: var(--mainTransition);
+}
+
+.footer-mail .social a:hover {
+    color: var(--darkBlue);
+}
+
+.footer-bottom {
+    padding: 2rem 3rem;
+    border-top: 2px solid var(--mainBlack);
+    text-align: center;
+}
+.footer-bottom p {
+    font-size: 1.2rem;
+}
+/* End of Footer */
