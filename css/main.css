@@ -1,0 +1,218 @@
+*{
+    font-family: "Cairo", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+img{
+    max-width: 100%;
+}
+.primary-btn{
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 28px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #7fad39;
+    letter-spacing: 2px
+}
+a:hover{
+    text-decoration: none !important;
+    outline: none;
+    color: #ffffff;
+}
+.cart{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.cart_table{
+    margin-bottom: 30px;
+}
+.cart_table table{
+    width: 100%;
+    text-align: center;
+}
+.cart_table table thead tr{
+    border-bottom: 1px solid #ebebeb;
+}
+.cart_table table thead th{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1c1c1c;
+    padding-bottom: 20px;
+}
+.cart_table table thead tr .product{
+    text-align: left;
+}
+.cart_table table tbody tr td{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ebebeb;
+}
+.cart_table table tbody tr .cart_item{
+    width: 630px;
+    text-align: left;
+}
+.cart_table table tbody tr .cart_item img{
+    display: inline-block;
+    margin-right: 25px;
+}
+.cart_table table tbody tr .cart_item h5{
+    color: #1c1c1c;
+    display: inline-block;
+}
+.cart_table table tbody tr .cart_price{
+    font-size: 18px;
+    color: #1c1c1c;
+    font-weight: 700;
+    width: 100px;
+}
+.cart_table table tbody tr .cart_quantity{
+    width: 225px;
+}
+.cart_table table tbody tr .cart_quantity .pro-qty{
+    width: 120px;
+    height: 40px;
+}
+.pro-qty{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background: #f5f5f5;
+    margin-bottom: 5px;
+}
+.cart_table table tbody tr .cart_quantity .pro-qty .qtybtn{
+    width: 15px;
+}
+.pro-qty .qtybtn{
+    font-size: 16px;
+    color: #6f6f6f;
+    cursor: pointer;
+    display: inline-block;
+}
+.cart_table table tbody tr .cart_quantity .pro-qty input{
+    color: #1c1c1c;
+}
+.pro-qty input{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: #6f6f6f;
+    width: 50px;
+    border: none;
+    background: #f5f5f5;
+    text-align: center;
+}
+.cart_table table tbody tr .cart_total{
+    font-size: 18px;
+    color: #1c1c1c;
+    font-weight: 700;
+    width: 110px;
+}
+.cart_table table tbody tr .cart_item_close{
+    text-align: right;
+}
+.cart_table table tbody tr .cart_item_close span{
+    font-size: 24px;
+    color: #b2b2b2;
+    cursor: pointer;
+}
+.primary-btn.cart-btn{
+    color: #6f6f6f;
+    padding: 14px 30px 12px;
+    background: #f5f5f5;
+}
+.primary-btn.cart-btn.cart-btn-right{
+    float: right;
+}
+.discount{
+    margin-top: 45px;
+}
+.discount h5{
+    font-size: 20px;
+    color: #1c1c1c;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.discount form input{
+    width: 255px;
+    height: 46px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    color: #b2b2b2;
+    text-align: center;
+    display: inline-block;
+    margin-right: 15px;
+}
+.site-btn{
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 28px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #7fad39;
+    letter-spacing: 2px
+}
+.discount form button{
+    border: none;
+    padding: 15px 30px 11px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    background: #6f6f6f;
+}
+.checkout{
+    background: #f5f5f5;
+    padding: 30px;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+.checkout h5{
+    color: #1c1c1c;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+ul,ol{
+    padding: 0;
+    margin: 0;
+}
+.checkout ul{
+    margin-bottom: 28px;
+}
+.checkout ul li{
+    font-size: 16px;
+    color: #1c1c1c;
+    font-weight: 700;
+    list-style: none;
+    overflow: hidden;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 13px;
+    margin-bottom: 18px;
+}
+.checkout ul li:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.checkout ul li span{
+    font-size: 18px;
+    color: #dd2222;
+    float: right;
+}
+.checkout .primary-btn{
+    display: block;
+    text-align: center;
+}
+@media only screen and (max-width: 479px){
+.cart__btns {
+    text-align: center;
+    }
+.primary-btn.cart-btn.cart-btn-right{
+    float: none;
+    margin-top: 15px;
+}
+.discount form input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+}
