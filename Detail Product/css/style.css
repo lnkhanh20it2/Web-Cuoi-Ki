@@ -186,12 +186,6 @@ p {
 
 /*------------------------------------------------------------------ LOADER -------------------------------------------------------------------*/
 
-@media (max-width: 767px) {
-    nav.navbar.navbar-inverse.navbar-mobile ul.nav {
-        border-top: solid 1px #222;
-    }
-}
-
 .hvr-hover {
     display: inline-block;
     vertical-align: middle;
@@ -944,41 +938,8 @@ p {
 
 .featured-products-box {}
 
-.featured-products-box .owl-nav {
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: -20px;
-    text-align: center;
-}
-
-
-/*nút back next */
-
-.featured-products-box .owl-nav button.owl-prev {
-    background: #000000;
-    color: #ffffff;
-    width: 38px;
-    height: 38px;
-    text-align: center;
-}
-
-.featured-products-box .owl-nav button.owl-next {
-    background: #000000;
-    color: #ffffff;
-    width: 38px;
-    height: 38px;
-    text-align: center;
-}
-
 
 /*hover back next*/
-
-.featured-products-box .owl-nav button.owl-prev:hover,
-.featured-products-box .owl-nav button.owl-next:hover {
-    background: #46463e;
-}
 
 .table-responsive .table td,
 .table-responsive .table th {
@@ -1011,57 +972,6 @@ p {
 .product__details__tab {
     padding-top: 80px;
     margin-bottom: 65px;
-}
-
-.nav {
-    border-bottom: none;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.nav::before {
-    position: absolute;
-    left: 0;
-    top: 13px;
-    height: 1px;
-    width: 335px;
-    background: #e1e1e1;
-    content: "";
-}
-
-.nav::after {
-    position: absolute;
-    right: 0;
-    top: 13px;
-    height: 1px;
-    width: 335px;
-    background: #e1e1e1;
-    content: "";
-}
-
-.nav-item {
-    margin-right: 46px;
-}
-
-.nav-item:last-child {
-    margin-right: 0;
-}
-
-.nav-item .nav-link {
-    font-size: 18px;
-    color: #666666;
-    font-weight: 600;
-    border: none;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    padding: 0;
-}
-
-.nav-item .nav-link.active {
-    color: #111111;
 }
 
 .tab-content .tab-pane h6 {
