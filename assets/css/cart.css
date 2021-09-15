@@ -5,6 +5,111 @@
 img{
     max-width: 100%;
 }
+:root {
+    --mainSpacing: 0.05rem;
+    --primaryColor: #bde0fe;
+    --darkBlue: #219ebc;
+    --lightBlue: #e0fbfc;
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --mainTransition: all 0.3s linear;
+    --mainYellow: #faa307;
+    --lightGray: rgba(58, 58, 55, 0.8);
+
+}
+*,
+::before,
+::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: var(--mainSpacing);
+}
+
+a {
+    text-decoration: none;
+}
+/* Navbar */
+.nav-center {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index:  1000;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--lightBlue);
+}
+.nav-link {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 1rem;
+    text-transform: capitalize;
+    color: var(--mainBlack);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: var(--mainTransition);
+}
+#down {
+    padding-left: .2rem;
+}
+.nav-link:hover {
+    color: var(--darkBlue);
+}
+.nav-link:hover > ul {
+    color: var(--mainBlack);
+}
+.nav-link-product {
+    position: relative;
+}
+.nav-link-product:hover .sub-product-nav {
+    opacity: 1;
+    visibility: visible;
+}
+.sub-product-nav {
+    opacity: 0;
+    width: 300px;
+    text-align:left;
+    background: var(--lightBlue);
+    list-style: none;
+    position: absolute;
+    left: -2rem;
+    top: 4.5rem;
+    z-index: 1000;
+    visibility: hidden;
+    transition: var(--mainTransition);
+}
+.sub-product-nav li {
+    display: block;
+    padding: 1rem 0 1rem 2rem;
+    transition: var(--mainTransition);
+}
+.sub-product-nav li:hover {
+    color: var(--darkBlue);
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-icon {
+    font-size: 1.3rem;
+    margin-right: .5rem;
+    color: var(--mainBlack);
+    transition: var(--mainTransition);
+}
+
+.nav-icon:hover {
+    color: var(--darkBlue);
+}
 .primary-btn{
     display: inline-block;
     font-size: 14px;
@@ -203,6 +308,116 @@ ul,ol{
     display: block;
     text-align: center;
 }
+/* Footer */
+#footer {
+    margin-top: -5rem;
+    background: var(--lightBlue);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item {
+    flex: 0 0 calc(33.3333% - 2rem);
+}
+
+.footer-item h1 {
+    font-size: 1rem;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-info{
+    align-self: center;
+}
+.footer-info .logo{
+    padding-bottom: 1.5rem;
+}
+.footer-info .info{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--lightGray);
+}
+.footer-link{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link .link {
+    display: flex;
+}
+
+.footer-link .link .link-item {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-top: 1rem;
+    margin-right: 2rem;
+}
+.footer-link .link .link-item  a {
+    color: var(--lightGray);
+    font-size: 14px;
+    line-height: 2rem;
+}
+
+.footer-mail{
+    display: flex;
+    flex-direction: column;
+}
+.footer-mail h2 {
+    padding-bottom: 1rem;
+}
+.footer-mail h4 {
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.footer-mail .input{
+    width: 100%;
+    display: flex;
+}
+.footer-mail .input input {
+    flex: 0 0 70%;
+    outline: none;
+    border: 1px solid var(--darkBlue);
+    padding-left: 1rem;
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+.footer-mail .input button {
+    flex: 0 0 30%;
+    outline: none;
+    border: none;
+    background-color: var(--darkBlue);
+    color: var(--mainWhite);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.footer-mail .social{
+    padding-top: 1rem;
+}
+.footer-mail .social a {
+    color: var(--mainBlack);
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    transition: var(--mainTransition);
+}
+
+.footer-mail .social a:hover {
+    color: var(--darkBlue);
+}
+
+.footer-bottom {
+    padding: 2rem 3rem;
+    border-top: 2px solid var(--mainBlack);
+    text-align: center;
+}
+.footer-bottom p {
+    font-size: 1.2rem;
+}
+/* End of Footer */
 @media only screen and (max-width: 479px){
 .cart__btns {
     text-align: center;
